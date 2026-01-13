@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 일반 채팅</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="chat-container">
+    <header>
+        <span class="home-icon" onclick="location.href='/'">🏠</span>
+        💬 AI 비서 채팅
+    </header>
+    <div id="chatBody" class="chat-body"></div>
+
+    <div class="input-area">
+        <textarea id="userMessage" placeholder="무엇이든 물어보세요!"></textarea>
+        <button onclick="sendRequest('CHAT')">전송</button>
+    </div>
+</div>
+
+<script src="/js/common.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => loadHistory('CHAT'));
+</script>
+</body>
+</html>

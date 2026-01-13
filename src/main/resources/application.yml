@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local # 기본적으로 local 프로파일을 사용하도록 설정
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=kotlinboot
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+gemini:
+  api:
+    url: https://generativelanguage.googleapis.com/v1/models//gemini-2.5-flash:generateContent
+server:
+  port: 8001

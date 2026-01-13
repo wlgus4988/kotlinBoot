@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2026 사주 분석</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="chat-container">
+    <header>
+        <span class="home-icon" onclick="location.href='/'">🏠</span>
+        🔮 2026 신년 사주 분석
+    </header>
+    <div id="chatBody" class="chat-body"></div>
+
+    <div class="input-area">
+        <div class="form-group">
+            <input type="date" id="birthDate">
+            <select id="calendar"><option value="양력">양력</option><option value="음력">음력</option></select>
+            <select id="gender"><option value="여성">여성</option><option value="남성">남성</option></select>
+            <input type="time" id="birthTime">
+        </div>
+        <textarea id="userMessage" placeholder="추가로 궁금한 점을 적어주세요."></textarea>
+        <button onclick="sendRequest('SAJU')">분석하기</button>
+    </div>
+</div>
+
+<script src="/js/common.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => loadHistory('SAJU'));
+</script>
+</body>
+</html>
