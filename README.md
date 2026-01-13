@@ -1,6 +1,6 @@
 # 🔮 Saju AI Advisor (사주 AI 챗봇) - PostgreSQL Edition
 
-> **Kotlin + Spring Boot + Gemini API**를 활용하고 **Oracle DB**를 사용하는 맞춤형 운세 분석 서비스입니다.
+> **Kotlin + Spring Boot + React + Gemini API**를 활용하고 **Oracle DB**를 사용하는 맞춤형 운세 분석 서비스입니다.
 
 ---
 
@@ -13,7 +13,7 @@
 - **Database**: PostgreSQL (v15+)
 - **ORM**: Spring Data JPA
 - **AI API**: Google Gemini 1.5 Flash
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla JS)
+- **Frontend**: React(javascript)
 
 ---
 
